@@ -5,7 +5,7 @@ import { AboutComponent } from "./about/about.component";
 
 @Component({
   selector: 'wicoc-root',
-  imports: [RouterOutlet, HomeComponent, AboutComponent],
+  imports: [HomeComponent, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
