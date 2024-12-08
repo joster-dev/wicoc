@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'wicoc-about',
@@ -6,15 +6,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
-export class AboutComponent implements OnInit {
-  @ViewChild('youtube') youtubeIframe!: HTMLIFrameElement;
+export class AboutComponent {
 
-  ngOnInit(): void {
-    setTimeout(() => {
-      const title = this.youtubeIframe.getElementsByClassName('ytp-show-cards-title');
-      if (title.length > 0) {
-        title[0].remove();
-      }
-    }, 3000);
-  }
 }
