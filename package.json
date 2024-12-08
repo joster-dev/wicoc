@@ -2,7 +2,7 @@
   "name": "wicoc",
   "version": "0.0.0",
   "scripts": {
-    "pages": "ng build --base-href=https://joster-dev.github.io/wicoc/ --deploy-url=https://joster-dev.github.io/wicoc/"
+    "pages": "ng build --base-href=/wicoc/ --deploy-url=https://joster-dev.github.io/wicoc/"
   },
   "private": true,
   "dependencies": {
