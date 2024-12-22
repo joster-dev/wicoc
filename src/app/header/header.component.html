@@ -1,0 +1,24 @@
+<div>
+  <a href="/">
+    <img src="icon.png" />
+  </a>
+  <div>
+    <div>February 9, 2025</div>
+    <div>2:00PM CT</div>
+  </div>
+</div>
+<nav>
+  @if(isHome) {
+  <button (click)="scrollTo('about')">
+    About
+  </button>
+  }
+  @else {
+  <button (click)="scrollTo('home')">
+    Home
+  </button>
+  }
+  <button (click)="onClickAttend()">
+    Attend
+  </button>
+</nav>
