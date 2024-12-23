@@ -40,7 +40,6 @@ export class HeaderComponent {
       cancelUrl: 'http://localhost:4200',
     })
       .then((result: any) => {
-        debugger;
         if (result.error) {
           alert(result.error.message);
           /*

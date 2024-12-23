@@ -17,23 +17,30 @@
     }
   }
 
-  nav>a,
-  nav>button {
-    color: inherit;
-    text-decoration: none;
-    padding: 0.5em;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    opacity: 0.8;
+  nav {
+    display: flex;
 
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: 1;
-      transform: scale(1.1);
+    >a,
+    >button {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      padding: 0.5em;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      opacity: 0.8;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 1;
+        transform: scale(1.1);
+      }
     }
   }
+
+
 
   img {
     width: 5rem;
