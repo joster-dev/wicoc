@@ -1,8 +1,12 @@
+:host {
+  display: block;
+  background-image: linear-gradient(#b2bcbe, #DAC493, #A7B4BD);
+}
+
 section {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 1rem;
-  background-image: linear-gradient(#b2bcbe, #DAC493, #A7B4BD);
 
   >div {
     padding: 3rem 0;

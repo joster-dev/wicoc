@@ -1,0 +1,14 @@
+:host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#b2bcbe, #DAC493, #A7B4BD);
+}
+
+section {
+  padding: 3rem 0;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex: 1;
+}

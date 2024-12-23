@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from "../footer/footer.component";
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'wicoc-refund',
@@ -12,5 +12,5 @@ import { FooterComponent } from "../footer/footer.component";
   styleUrl: './refund.component.scss'
 })
 export class RefundComponent {
-  supportEmail = 'returntotheland@proton.me';
+  supportEmail = 'IntentionalCommunityConference@proton.me';
 }
