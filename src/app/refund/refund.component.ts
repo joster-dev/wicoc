@@ -12,5 +12,4 @@ import { HeaderComponent } from '../header/header.component';
   styleUrl: './refund.component.scss'
 })
 export class RefundComponent {
-  supportEmail = 'IntentionalCommunityConference@proton.me';
 }
