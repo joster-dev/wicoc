@@ -1,0 +1,45 @@
+:host {
+  background: radial-gradient(#192224, #252821);
+  color: #FFF;
+  padding: 2rem 1rem;
+
+  >div {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      >div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        >div:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+
+    >div:last-child {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  :host>div {
+    flex-direction: column;
+    text-align: center !important;
+
+    >div:last-child {
+      text-align: center !important;
+    }
+  }
+}

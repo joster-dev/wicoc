@@ -49,22 +49,25 @@ section {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
 }
 
-button#down {
-  font-size: 6rem;
-  text-align: center;
-  text-shadow: 0.1rem 0.1rem 0.1rem white;
-  font-weight: bold;
+#down {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: shake 2s linear infinite;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  >button {
+    font-size: 6rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    font-weight: bold;
+    animation: shake 2s linear infinite;
+  }
 }
 
 @keyframes shake {

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HypeComponent } from './hype.component';
+import { RefundComponent } from './refund.component';
 
-describe('HypeComponent', () => {
-  let component: HypeComponent;
-  let fixture: ComponentFixture<HypeComponent>;
+describe('RefundComponent', () => {
+  let component: RefundComponent;
+  let fixture: ComponentFixture<RefundComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HypeComponent]
+      imports: [RefundComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HypeComponent);
+    fixture = TestBed.createComponent(RefundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

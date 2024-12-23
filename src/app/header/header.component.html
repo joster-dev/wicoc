@@ -3,22 +3,35 @@
     <img src="icon.png" />
   </a>
   <div>
-    <div>February 9, 2025</div>
-    <div>2:00PM CT</div>
+    @if (place !== 'other') {
+    <div>{{eventStart | date: 'MMMM d, yyyy'}}</div>
+    <div>{{eventStart | date: 'shortTime'}} - {{eventEnd | date: 'shortTime'}}</div>
+    }
+    @else {
+    <div>Intentional Community</div>
+    <div>Conference</div>
+    }
   </div>
 </div>
 <nav>
-  @if(isHome) {
+  @if(place === 'top') {
   <button (click)="scrollTo('about')">
     About
   </button>
   }
-  @else {
+  @else if(place === 'bottom') {
   <button (click)="scrollTo('home')">
     Home
   </button>
   }
+  @else {
+  <a routerLink="/">
+    Home
+  </a>
+  }
+  @if(place !== 'other') {
   <button (click)="onClickAttend()">
     Attend
   </button>
+  }
 </nav>

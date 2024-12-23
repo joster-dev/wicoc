@@ -1,13 +1,21 @@
+import { DatePipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'wicoc-header',
-  imports: [],
+  imports: [
+    RouterLink,
+    DatePipe,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  @Input() isHome = true;
+  @Input() place: 'top' | 'bottom' | 'other' = 'top';
+
+  eventStart = new Date('2025-02-09T19:00:00.000Z');
+  eventEnd = new Date('2025-02-10T01:00:00.000Z');
 
   stripe = (<any>window).Stripe('pk_test_51QTVgXKI6IbeEj8j0JBA9GOBsWAdNuEpjf8VWT7CjJEUvR5foJ24Hy500f70tFqRU1q8efFQIPXIkAKSZOctxRKa00tQkLXhy3');
 
