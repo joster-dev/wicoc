@@ -11,4 +11,8 @@ section {
   margin: 0 auto;
   padding: 0 1rem;
   flex: 1;
+
+  >div {
+    padding: 3rem 0;
+  }
 }

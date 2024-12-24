@@ -15,7 +15,6 @@ export class HeaderComponent {
   @Input() place: 'top' | 'bottom' | 'other' = 'top';
 
   eventStart = new Date('2025-02-09T19:00:00.000Z');
-  eventEnd = new Date('2025-02-10T01:00:00.000Z');
 
   stripe = (<any>window).Stripe('pk_test_51QTVgXKI6IbeEj8j0JBA9GOBsWAdNuEpjf8VWT7CjJEUvR5foJ24Hy500f70tFqRU1q8efFQIPXIkAKSZOctxRKa00tQkLXhy3');
 
@@ -27,7 +26,7 @@ export class HeaderComponent {
 
   onClickAttend(): void {
     this.stripe.redirectToCheckout({
-      lineItems: [{ price: 'price_1QYWDBKI6IbeEj8jYDBg7pr5', quantity: 1 }],
+      lineItems: [{ price: 'price_1QZKwvDOsCbaFxnoZe3bx4rs', quantity: 1 }],
       mode: 'payment',
       /*
        * Do not rely on the redirect to the successUrl for fulfilling
@@ -36,8 +35,8 @@ export class HeaderComponent {
        * Instead use one of the strategies described in
        * https://docs.stripe.com/payments/checkout/fulfill-orders
        */
-      successUrl: 'http://localhost:4200/thank-you',
-      cancelUrl: 'http://localhost:4200',
+      successUrl: window.location.protocol + '//intentionalcommunity.live/#/thank-you',
+      cancelUrl: window.location.protocol + '//intentionalcommunity.live/',
     })
       .then((result: any) => {
         if (result.error) {

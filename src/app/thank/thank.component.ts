@@ -15,5 +15,4 @@ import { HeaderComponent } from '../header/header.component';
 })
 export class ThankComponent {
   eventStart = new Date('2025-02-09T19:00:00.000Z');
-  eventEnd = new Date('2025-02-10T01:00:00.000Z');
 }
